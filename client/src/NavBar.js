@@ -11,9 +11,11 @@ export default function NavBar(){
  <nav>
   
   <li><Link to="/">About</Link></li>
-  <li><Link to="/projectOne">Project One</Link></li>
-  <li><Link to="/projectTwo">Project Two</Link></li>
-  <li><Link to="/projectThree">Project Three</Link></li>
+  <li><Link to="/projectOne">Astronomy and Weather </Link></li>
+  <li><Link to="/projectTwo">Mindfulness Journal</Link></li>
+  <li><Link to="/projectThree">Rock the Vote</Link></li>
+  <li><Link to="/projectFour">Astrology Dashboard</Link></li>
+
 
 </nav> 
 

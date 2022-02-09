@@ -10,17 +10,14 @@ return (
     <>
     
     <div className="about">
-    
-    <h3 style={{display:'inline'}}>    🌐   Salt Lake City, Utah</h3><br/>
-    
-    <p style={{fontSize:'14px', paddingLeft:'15px', display:'inline'}}><a href="mailto:d.ibarra721@gmail.com" target="_blank" rel="noreferrer"  style={{color:'#ff4e00'}}>d.ibarra721@gmail.com</a></p>
-    <br/>
+        
+            <br/>
     
         <p>I am a  mindful Full Stack Javascript Web Developer. When I am not coding, I am
-         <br/>teaching meditation classes. I enjoy creating astehically pleasing applications
-         <br/> that empower people to learn something new. </p>
+         teaching meditation classes. I enjoy creating aesthetically pleasing applications
+          that empower people to learn something new. Click on the links above to navigate to different projects. </p>
     
-   <p>If you would like to work together, use the contact form. Look forward to hearing from you</p> 
+   <p>If you would like to work together, use the contact form. <br/>Look forward to hearing from you</p> 
     <ContactUs/>
 
         </div>

@@ -22,11 +22,11 @@ export const ContactUs = () => {
   return (
 
     <form  id='form' ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
+      <label>Name :</label>
       <input type="text" name="user_name" placeholder='your name' /><br/>
-      <label>Email</label>
+      <label>Email : </label>
       <input type="email" name="user_email" placeholder='your email' /><br/>
-      <label>Message</label>
+      <label>Message:</label>
       <textarea name="message" /><br/>
       <input type="submit" value="Send" placeholder='your Message' />
     </form>

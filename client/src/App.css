@@ -1,5 +1,5 @@
 body{
-  background-color: #fff0f7;
+  background-color: whitesmoke;
   top:0;
   bottom: 0;
   font-family: 'Brandon';
@@ -8,11 +8,14 @@ body{
   display: grid;
    grid-template-columns: repeat(1fr, 2fr);
   grid-template-rows: (3, 1fr);
-
+margin-left: 0;
+font-size: 13px;
 
 }
 
-
+.name{
+  align-items: center;
+}
 
 li a:hover {
   text-decoration: underline #f6f7f1;
@@ -23,6 +26,7 @@ li a:hover {
 
 li{
   color: #ff4e00;
+  font-size: 15px;
 }
 
 @font-face {
@@ -62,6 +66,7 @@ h3{
 }
 
 .wrapper{
+  margin-left: 0;
   display: grid;
   /* margin: 0; */
   /* height: 100%; */
@@ -88,7 +93,7 @@ h3{
 
 .name{
   grid-column: 1/2;
-  border-right: groove 2px #ff4e00;
+  border-right: solid 1px #ff4e00;
   grid-row: 1/4;
   height: 100%;
   padding-top: 30px;
@@ -117,9 +122,8 @@ h3{
   padding-top: 6px;
   margin-top: 0;
   height: auto;
-  max-width:525% ;
+  max-width:52% ;
   border-radius: 350px;
-  /* align-items: center; */
 }
 li{
   list-style: none;
@@ -129,6 +133,7 @@ li{
 
 
 .headshot{
+  align-items: center;
   width: 50px;
   margin-top: 20%;
   /* margin-left: 20px; */
@@ -140,10 +145,22 @@ p{
   display: inline-block;
 }
 
+.skills{
+  align-items: center;
+  text-align: center;
+  /* width: 300px; */
+}
+
+h4{
+  font-size: 16px;
+  font-weight: bold;
+}
 .about{
+  text-align: justify;
   margin-top: 70px;
   grid-column: 2/3;
   grid-row:2/3;
+  width: 500px;
   /* margin-left: 10%; */
   /* padding-left: 27px; */
   /* display: block; */
@@ -151,8 +168,9 @@ p{
 }
 
 .items{
-padding-left: 44px;
-display: flex;
+  align-items: center;
+padding-left: 6px;
+
 }
 
 .projectOne{
@@ -161,7 +179,8 @@ display: flex;
   grid-row:2/3;
   margin-left: 20px;
   width: 635px;
-  
+  text-align: justify;
+
 
 }
 
@@ -172,10 +191,25 @@ display: flex;
   grid-row:2/3;
   margin-left: 20px;
   width: 635px;
-  
+  text-align: justify;
 
+  
 }
 
+.email{
+  align-self: center;
+  margin-left: 35%;
+  display: none;
+}
+
+.projectThree{
+  margin-top: 70px;
+  grid-column: 2/3;
+  grid-row:2/3;
+  margin-left: 20px;
+  width: 635px;
+  text-align: justify;
+}
 
 form{
   align-items: center;
@@ -193,28 +227,30 @@ input{
   padding-bottom: 3px;
 }
 
-textarea{
-  width:15.5rem;
+.textarea{
+  width:10.5rem;
   margin-left: 5px;
   background-color: whitesmoke;
   color: #3A1A21;
   border-radius: 5px;
-  padding-top: 6px;
+  /* padding-top: 6px; */
+  margin-top: 3px;
 
 }
 
-/* #projectOne h1{
-  font-size: 15px;
-} */
+label{
+  font-weight: bolder;
+}
 
+
+input{
+  background-color: white;
+}
 p{
   margin-left: 30px;
   font-size: 1rem;
 }
 
-/* .navBar{
-  margin-left: 23px;
-} */
 
 @media (max-width: 700px){
   .wrapper{
@@ -247,7 +283,14 @@ p{
     bottom: 0;
     top: 0;
   }
-
+  .email{
+    /* align-self: center; */
+    /* margin-left: 60%; */
+    display: contents;
+    padding-left: 35%;
+   
+  }
+  
 
 .about{
   grid-column: 1/1;
@@ -289,6 +332,11 @@ border: none;
 p{
   margin-left: 30px;
   font-size: 1rem;
+}
+
+
+form{
+  display: none;
 }
 
 }

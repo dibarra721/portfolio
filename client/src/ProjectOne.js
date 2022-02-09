@@ -15,7 +15,7 @@ export default function ProjectOne() {
             <h1>AstroWeather Application</h1>
             <p>This application was built so that a user can not only get the weather, but their astronomy information as well. The user 
                 can get the sunrise, moonrise,and find out information on the current Moon Phase.As an ode to the early 2000's 
-                the user can also get their horoscope for the day.</p><br/>
+                the user can also get their horoscope for the day. Built using React, Node, and express Express. Deployed using Netlify.</p><br/>
             <img src={astroWeather} alt="project" width={'620px'} height={'400px'} />
             <br />
             
