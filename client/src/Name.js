@@ -1,5 +1,4 @@
 import React from "react";
-import name from "./media/name.png"
 import ReactTypingEffect from 'react-typing-effect';
 import small from "./media/small.png"
 
