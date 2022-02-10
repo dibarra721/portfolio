@@ -7,6 +7,8 @@ import About from "./About";
 import ProjectOne from "./ProjectOne";
 import ProjectTwo from "./ProjectTwo";
 import ProjectThree from "./ProjectThree";
+import ProjectFour from "./ProjectFour";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -14,7 +16,6 @@ function App() {
   
     <>
     
-
     
     <div className="wrapper">
 
@@ -23,8 +24,6 @@ function App() {
 
     </div>
 
-{/* 
-      <div className="content"> */}
 
       <NavBar />
   
@@ -35,9 +34,7 @@ function App() {
           <Route  exact path="/projectOne" element={<ProjectOne />} render={() => <ProjectOne />} />
           <Route  exact path="/projectTwo" element={<ProjectTwo />} render={() => <ProjectTwo />} />
           <Route  exact path="/projectThree" element={<ProjectThree />} render={() => <ProjectThree />} />
-
-
-          {/* <Route path= "*"element={<NotFound/>} render={() => <NotFound />} /> */}
+          <Route  exact path="/projectFour" element={<ProjectFour />} render={() => <ProjectFour />} />
 
 
         </Routes>
@@ -45,7 +42,7 @@ function App() {
 
 
 
-
+<Footer/>
 
       </div>
       </>
