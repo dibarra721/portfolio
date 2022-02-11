@@ -55,15 +55,7 @@ export default function Name() {
             </svg>
           </a>
           <br />
-          <a
-            href="mailto:d.ibarra721@gmail.com"
-            className="email"
-            target="_blank"
-            rel="noreferrer"
-            style={{ color: "#ff4e00" }}
-          >
-            d.ibarra721@gmail.com
-          </a>
+        
         </center>
       </div>
 

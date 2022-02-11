@@ -1,5 +1,5 @@
 body {
-  background-color: whitesmoke;
+  background-color: white;
   top: 0;
   bottom: 0;
   font-family: "Brandon";
@@ -11,6 +11,15 @@ body {
   margin-left: 0;
   font-size: 15px;
 }
+a{
+  color: #3a1a21;
+
+}
+a:hover{
+  background-color: #FFB7B0;
+  color: white;
+}
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -19,7 +28,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #db9487;
+  box-shadow: inset 0 0 5px #FFB7B0;
   border-radius: 5px;
 }
 
@@ -40,15 +49,14 @@ body {
 }
 
 
-.btn-primary{
+button{
   background-color: #ff4e00;
   color: #f6f7f1;
-  /* align-self: center; */
   border-radius: 2px;
   height: 50px;
   font-size: 20px;
  border-color: #f6f7f1;
- width: 50px;
+ width: fit-content;
 
 }
 .name {
@@ -65,13 +73,14 @@ h5{
 li a:hover {
   text-decoration: underline #f6f7f1;
   color: white;
-  background-color: #ff4e00;
+  background-color: #FFB7B0;
   transition: 2s;
 }
 
-li {
-  color: #ff4e00;
+li a{
+  color: #3a1a21;
   font-size: 15px;
+  margin-left: 18%;
 
 }
 
@@ -131,7 +140,7 @@ h3 {
 
 .name {
   grid-column: 1/2;
-  border-right: solid 1px #ff4e00;
+  border-right: solid 2px #FFB7B0;
   grid-row: 1/4;
   height: 100%;
   padding-top: 30px;
@@ -210,7 +219,7 @@ h4 {
 }
 
 .projectOne {
-  margin-top: 70px;
+  margin-top: 0px;
   grid-column: 2/3;
   grid-row: 2/3;
   margin-left: 20px;
@@ -219,7 +228,7 @@ h4 {
 }
 
 .projectTwo {
-  margin-top: 70px;
+  margin-top: 0px;
   grid-column: 2/3;
   grid-row: 2/3;
   margin-left: 20px;
@@ -233,30 +242,8 @@ h4 {
   display: none;
 }
 
-
-footer {
-  grid-row-start: 4;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  text-align: center;
-  bottom: 0;
-}
-
-.footerBox {
-  background-color: #ff4e00;
-  /* opacity: 0.8; */
-  grid-row-start: 4;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  height: 70px;
-  bottom: 0;
-  color: whitesmoke;
-
-}
 .projectThree {
-  margin-top: 70px;
+  margin-top: 0px;
   grid-column: 2/3;
   grid-row: 2/3;
   margin-left: 20px;
@@ -265,7 +252,7 @@ footer {
 }
 
 .projectFour {
-  margin-top: 70px;
+  margin-top: 0px;
   grid-column: 2/3;
   grid-row: 2/3;
   margin-left: 20px;
@@ -338,19 +325,13 @@ p {
     bottom: 0;
     top: 0;
   }
-  .email {
-    display: contents;
-    padding-left: 35%;
-  }
 
   .about {
     align-items: center;
     grid-column: 1/1;
     grid-row: 3/3;
     margin-top: 0;
-    margin-left: 0
-    ;
-    /* display: grid; */
+    margin-left: 0 ;
   }
 
   .navBar {
@@ -358,15 +339,18 @@ p {
     grid-column: 1/1;
     grid-row: 1/1;
     margin-left: 15%;
-    margin-bottom: 3px;
-    padding-bottom: 5px;;
+    margin-bottom: 9px;
+    padding-bottom: 9px;;
   }
 
   .name {
     border: none;
     align-items: center;
     width: 100%;
-    height: fit-content;
+    height: 155px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    grid-row: 2/3;
   }
 
   .projectOne {
@@ -392,29 +376,28 @@ p {
   p {
     margin-left: 30px;
     font-size: 1rem;
+    text-align: center;
   }
 
   form {
     display: none;
   }
 
-  p {
-    display: inline-block;
-    font-size: 11px;
+
+   .items p{
+    margin-left: 25%;
   }
 
-
-  footer {
-    display: none;
-  }
-  
-  .footerBox {
-  display: none;
-  
-  }
 
   .skills{
     font-size: 13px;
     height: fit-content;
+  }
+
+  li a{
+    color: #3a1a21;
+    font-size: 15px;
+    margin-left: 13%;
+
   }
 }

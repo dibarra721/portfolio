@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import astroWeather from "./media/astroWeather.png";
 import mindfulness from "./media/mindfulness.png";
 import rock from "./media/rock.png"
-import astro from "./media/astro.png";
+import newastro from "./media/newastro.png";
 
 
 
@@ -12,10 +12,10 @@ export default function About() {
     <>
       <div className="about">
         <center>
-          <p>I look forward to hearing from you</p> <br />
+          <p>I look forward to connecting.</p> <br />
           <Link to="/contact" className="btn-primary">
-            {" "}
-            Contact Now{" "}
+            <button >Contact Now </button>
+            
           </Link>
           <br />
           <p>Click on each image to take you to the Project Page</p>
@@ -23,9 +23,9 @@ export default function About() {
           <div className="four">
             <Link to="/projectFour">
               <img
-                src={astro}
+                src={newastro}
                 alt="project"
-                width={"425px"}
+                width={"600px"}
                 height={"350px"}
               />
             </Link>
@@ -34,7 +34,7 @@ export default function About() {
         their astrology information. <br />
             View{" "}
             <a
-              href="http://astroweather.surge.sh"
+              href="https://astrology-application.herokuapp.com/"
               className="preview"
               target="_blank"
               rel="noreferrer"
@@ -43,7 +43,7 @@ export default function About() {
             </a>
             View{" "}
             <a
-              href="https://github.com/dibarra721/assignments/tree/main/level-4/capstone"
+              href="https://github.com/dibarra721/astro-dashboard"
               target="_blank"
               rel="noreferrer"
             >
@@ -56,7 +56,7 @@ export default function About() {
               <img
                 src={mindfulness}
                 alt="project"
-                width={"425px"}
+                width={"600px"}
                 height={"350px"}
               />
             </Link>
@@ -87,7 +87,7 @@ export default function About() {
               <img
                 src={astroWeather}
                 alt="project"
-                width={"425px"}
+                width={"600px"}
                 height={"350px"}
               />
             </Link>
@@ -119,7 +119,7 @@ export default function About() {
               <img
                 src={rock}
                 alt="project"
-                width={"450px"}
+                width={"600px"}
                 height={"350px"}
               />
             </Link>

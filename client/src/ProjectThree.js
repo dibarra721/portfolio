@@ -47,8 +47,7 @@ export default function ProjectThree() {
           <br/>
           <p>I look forward to hearing from you</p> <br />
           <Link to="/contact" className="btn-primary">
-            {" "}
-            Contact Now{" "}
+            <button >Contact Now </button>
           </Link>
         </center>
       </div>
