@@ -28,8 +28,6 @@ function App() {
 
       <NavBar />
   
-
-
         <Routes>
           <Route  exact path="/" element={<About />} render={() => <About />} />
           <Route  exact path="/projectOne" element={<ProjectOne />} render={() => <ProjectOne />} />

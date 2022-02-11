@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import astroWeather from "./media/astroWeather.png";
 import mindfulness from "./media/mindfulness.png";
 import rock from "./media/rock.png"
+import astro from "./media/astro.png";
+
 
 
 export default function About() {
@@ -17,18 +19,19 @@ export default function About() {
           </Link>
           <br />
           <p>Click on each image to take you to the Project Page</p>
-          <div className="one">
-            <Link to="/projectOne">
+
+          <div className="four">
+            <Link to="/projectFour">
               <img
-                src={astroWeather}
+                src={astro}
                 alt="project"
                 width={"425px"}
                 height={"350px"}
               />
             </Link>
             <br />
-            This application was built so that a user can not only get
-            <br /> the weather, but their astronomy information as well. <br />
+            This application was built so that a user can <br/>have a place to gather
+        their astrology information. <br />
             View{" "}
             <a
               href="http://astroweather.surge.sh"
@@ -46,8 +49,8 @@ export default function About() {
             >
               Code
             </a>
-            <br /> React • Node • Express
-          </div>
+            <br /> React • Node • Express • Mongoose • MongoDB
+          </div><br/>
           <div className="two">
             <Link to="/projectTwo">
               <img
@@ -78,6 +81,37 @@ export default function About() {
               Code
             </a>
             <br /> React • Node • Express • Mongoose 
+          </div>
+          <div className="one">
+            <Link to="/projectOne">
+              <img
+                src={astroWeather}
+                alt="project"
+                width={"425px"}
+                height={"350px"}
+              />
+            </Link>
+            <br />
+            This application was built so that a user can not only get
+            <br /> the weather, but their astronomy information as well. <br />
+            View{" "}
+            <a
+              href="http://astroweather.surge.sh"
+              className="preview"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live
+            </a>
+            View{" "}
+            <a
+              href="https://github.com/dibarra721/assignments/tree/main/level-4/capstone"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Code
+            </a>
+            <br /> React • Node • Express
           </div>
           <br/>
           <div className="three">
