@@ -16,7 +16,7 @@ export default function ProjectThree() {
 
         <h1>Rock the Vote  </h1>
                 <p>This application was built so that a user can keep track with issues that are important to their community.
-                    Built using React, Node, Express, Mongoose and  Mongodb. Deployed using Heroku, and MongoDB for database. </p><br/>
+                    Built using React, Node, Express, Mongoose and  MongoDB. Deployed using Heroku, and MongoDB for database. </p><br/>
                 <img src={rock} alt="project" width={'620px'} height={'400px'} />
                 <br />
                 

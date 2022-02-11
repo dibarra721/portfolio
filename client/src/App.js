@@ -9,6 +9,7 @@ import ProjectTwo from "./ProjectTwo";
 import ProjectThree from "./ProjectThree";
 import ProjectFour from "./ProjectFour";
 import Footer from "./Footer";
+import ContactUs from "./ContactUs";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
           <Route  exact path="/projectTwo" element={<ProjectTwo />} render={() => <ProjectTwo />} />
           <Route  exact path="/projectThree" element={<ProjectThree />} render={() => <ProjectThree />} />
           <Route  exact path="/projectFour" element={<ProjectFour />} render={() => <ProjectFour />} />
+          <Route  exact path="/contact" element={<ContactUs />} render={() => <ContactUs/>} />
+          <Route  exact path="/projects" element={<About />} render={() => <About/>} />
+
 
 
         </Routes>
@@ -42,7 +46,7 @@ function App() {
 
 
 
-<Footer/>
+{/* <Footer/> */}
 
       </div>
       </>

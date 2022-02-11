@@ -9,16 +9,44 @@ body {
   grid-template-columns: repeat(1fr, 2fr);
   grid-template-rows: (3, 1fr);
   margin-left: 0;
-  font-size: 17px;
+  font-size: 15px;
 }
 
+.two{
+  display: inline;;
+}
+
+
+.preview{
+  padding-right: 4px;;
+}
+
+
+.btn-primary{
+  background-color: #ff4e00;
+  color: #f6f7f1;
+  /* align-self: center; */
+  border-radius: 2px;
+  height: 50px;
+  font-size: 20px;
+ border-color: #f6f7f1;
+ width: 50px;
+
+}
 .name {
   align-items: center;
 }
 
+h5{
+  font-family: "Blake";
+  font-size: 36px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 li a:hover {
   text-decoration: underline #f6f7f1;
-  color: #3a1a21;
+  color: white;
   background-color: #ff4e00;
   transition: 2s;
 }
@@ -26,6 +54,7 @@ li a:hover {
 li {
   color: #ff4e00;
   font-size: 15px;
+
 }
 
 @font-face {
@@ -143,11 +172,16 @@ h4 {
 }
 .about {
   text-align: justify;
-  margin-top: 70px;
+  margin-top: 0px;
   grid-column: 2/3;
   grid-row: 2/3;
-  width: 500px;
+  width: 800px;
+  overflow-y: scroll;
+  height: 650px;
+  
 }
+
+
 
 .items {
   align-items: center;
@@ -255,28 +289,30 @@ p {
 }
 
 
-
 /* media responsive  */
-@media (max-width: 700px) {
+@media (max-width: 810px) {
   .wrapper {
     display: grid;
-
     margin-top: 0px;
     margin-bottom: 0px;
-
     grid-template-columns: 1fr;
     width: 100%;
     grid-template-rows: 1fr, 1fr, 1fr;
   }
 
+  .photo {
+    padding-top: 6px;
+    margin-top: 0;
+    height: auto;
+    max-width: 30%;
+    border-radius: 350px;
+  }
   #root {
     margin-top: 0;
     grid-template-columns: 1fr;
-
     display: grid;
     grid-template-rows: (3, 1fr);
     width: 100%;
-
     bottom: 0;
     top: 0;
   }
@@ -286,18 +322,29 @@ p {
   }
 
   .about {
+    align-items: center;
     grid-column: 1/1;
     grid-row: 3/3;
     margin-top: 0;
+    margin-left: 0
+    ;
+    /* display: grid; */
   }
 
   .navBar {
+    align-items: center;
     grid-column: 1/1;
     grid-row: 1/1;
+    margin-left: 15%;
+    margin-bottom: 3px;
+    padding-bottom: 5px;;
   }
 
   .name {
     border: none;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
   }
 
   .projectOne {
@@ -342,5 +389,10 @@ p {
   .footerBox {
   display: none;
   
+  }
+
+  .skills{
+    font-size: 13px;
+    height: fit-content;
   }
 }

@@ -1,33 +1,118 @@
 import React from "react";
-import ContactUs from "./ContactUs";
-// import globe from"./media/globe-2.png"
+import { Link } from "react-router-dom";
+import astroWeather from "./media/astroWeather.png";
+import mindfulness from "./media/mindfulness.png";
+import rock from "./media/rock.png"
 
 
-
-export default function About(){
-
-return (
+export default function About() {
+  return (
     <>
-    
-    <div className="about">
-        
-            <br/>
-    
-        <p>I am a  mindful Full Stack Javascript Web Developer. When I am not coding, I am
-         teaching meditation classes. I enjoy creating aesthetically pleasing applications
-          that empower people to learn something new. Click on the links above to navigate to different projects. </p>
-    
-   <p>If you would like to work together, use the contact form. <br/>Look forward to hearing from you</p> 
-    <ContactUs/>
-
-        </div>
-
-
-    
+      <div className="about">
+        <center>
+          <p>I look forward to hearing from you</p> <br />
+          <Link to="/contact" className="btn-primary">
+            {" "}
+            Contact Now{" "}
+          </Link>
+          <br />
+          <p>Click on each image to take you to the Project Page</p>
+          <div className="one">
+            <Link to="/projectOne">
+              <img
+                src={astroWeather}
+                alt="project"
+                width={"425px"}
+                height={"350px"}
+              />
+            </Link>
+            <br />
+            This application was built so that a user can not only get
+            <br /> the weather, but their astronomy information as well. <br />
+            View{" "}
+            <a
+              href="http://astroweather.surge.sh"
+              className="preview"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live
+            </a>
+            View{" "}
+            <a
+              href="https://github.com/dibarra721/assignments/tree/main/level-4/capstone"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Code
+            </a>
+            <br /> React • Node • Express
+          </div>
+          <div className="two">
+            <Link to="/projectTwo">
+              <img
+                src={mindfulness}
+                alt="project"
+                width={"425px"}
+                height={"350px"}
+              />
+            </Link>
+            <br />
+            This application was built so that a user can keep a digital journal{" "}
+            <br /> of their meditation and movement. <br />
+            View{" "}
+            <a
+              href="https://mindfulness-journal-app.herokuapp.com"
+              className="preview"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live
+            </a>
+            View{" "}
+            <a
+              href="https://github.com/dibarra721/Mindfulness-Journal-App-"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Code
+            </a>
+            <br /> React • Node • Express • Mongoose 
+          </div>
+          <br/>
+          <div className="three">
+            <Link to="/projectThree">
+              <img
+                src={rock}
+                alt="project"
+                width={"450px"}
+                height={"350px"}
+              />
+            </Link>
+            <br />
+            This application was built so that a user can keep track with<br/> 
+            issues that are important to their community. <br />
+            View{" "}
+            <a
+              href="https://voting-rocks.herokuapp.com/"
+              className="preview"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live
+            </a>
+            View{" "}
+            <a
+              href="https://github.com/dibarra721/vote"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Code
+            </a>
+            <br /> React • Node • Express • Mongoose • MongoDB
+          </div>
+        </center>
+      </div>
     </>
-
-
-
-)
-
+  );
 }
