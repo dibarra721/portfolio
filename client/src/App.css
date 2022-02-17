@@ -53,10 +53,12 @@ button{
   background-color: #ff4e00;
   color: #f6f7f1;
   border-radius: 2px;
-  height: 50px;
-  font-size: 20px;
+  height: 35px;
+  font-size: 18px;
  border-color: #f6f7f1;
  width: fit-content;
+ margin-top: 0;
+ padding-top: 0;
 
 }
 .name {
@@ -101,7 +103,7 @@ li a{
 h1 {
   font-family: "Blake";
   font-size: 36px;
-  display: flex;
+  /* display: flex; */
   padding-bottom: 5px;
 }
 
@@ -116,15 +118,16 @@ h3 {
   font-size: 14px;
   padding-left: 37px;
 }
-
+h2{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
 .wrapper {
   margin-left: 0;
   display: grid;
-
   margin-top: 0px;
   margin-bottom: 0px;
-
   grid-template-columns: repeat(10%, 90%);
   grid-template-rows: 100px 600px 300px;
 }
@@ -197,6 +200,7 @@ h4 {
   font-size: 16px;
   font-weight: bold;
 }
+
 .about {
   text-align: justify;
   margin-top: 0px;
@@ -234,12 +238,6 @@ h4 {
   margin-left: 20px;
   width: 635px;
   text-align: justify;
-}
-
-.email {
-  align-self: center;
-  margin-left: 35%;
-  display: none;
 }
 
 .projectThree {
@@ -289,9 +287,6 @@ label {
   font-weight: bolder;
 }
 
-input {
-  background-color: white;
-}
 p {
   margin-left: 30px;
   font-size: 1rem;
@@ -308,6 +303,9 @@ p {
     width: 100%;
     grid-template-rows: 1fr, 1fr, 1fr;
   }
+
+
+
 
   .photo {
     padding-top: 6px;
@@ -380,7 +378,8 @@ p {
   }
 
   form {
-    display: none;
+    grid-column: 1/1;
+    grid-row: 2/3;
   }
 
 
@@ -400,4 +399,193 @@ p {
     margin-left: 13%;
 
   }
+
+
+  form {
+    margin-top: 5px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    align-items: center;
+    margin-left: 7%;
+  }
+
+h2{
+  /* margin-left: 30%; */
+  font-size: 2em;;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+  .contactForm{
+    margin-top: 0;
+    grid-column: 1/1;
+    grid-row: 3/3;
+   font-size: 1em;
+   margin-left: 10%;
+   align-items: center;
+   text-align: center;
+  }
+
+
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+body{
+  font-size: .7em;
+}
+  .wrapper {
+    display: grid;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-template-rows: auto;
+  }
+
+  form {
+    grid-column: 1/1;
+    grid-row: 2/3;
+  }
+
+  .contactForm{
+    margin-top: 0;
+    grid-column: 1/1;
+    grid-row: 3/3;
+   font-size: 1em;
+   margin-left: 10%;
+   align-items: center;
+   padding-top: 230px;
+  }
+
+  li a{
+    color: #3a1a21;
+    font-size: 15px;
+    margin-left: 8%;
+  }
+
+button{
+  height: 20px;
+  font-size: 1em;;
+}
+  .skills{
+    font-size: .5em;
+    height: fit-content;
+  }
+
+
+  .items p{
+    margin-left: 25%;
+  }
+
+
+  .photo {
+    padding-top: 6px;
+    margin-top: 0;
+    height: auto;
+    max-width: 30%;
+    border-radius: 350px;
+  }
+  #root {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-rows: 1fr, .5fr, 1fr;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+  }
+
+  .about {
+    align-items: center;
+    grid-column: 1/1;
+    grid-row: 3/3;
+    margin-left: 0 ;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 0;
+    padding-top: 245px;
+  }
+
+  .navBar {
+    align-items: center;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    margin-left: 15%;
+    margin-bottom: 9px;
+    padding-bottom: 9px;;
+  }
+
+  .name {
+    border: none;
+    align-items: center;
+    width: fit-content;
+    /* height: fit-content; */
+    padding-bottom: 0;
+    margin-bottom: 0;
+    grid-row: 2/3;
+    text-align: center;
+  }
+
+  .projectOne {
+    grid-column: 1/1;
+    grid-row: 3/3;
+    font-size: .7em;
+    margin-left: 10%;
+    align-items: center;
+  }
+
+  .projectTwo {
+    grid-column: 1/1;
+    grid-row: 3/3;
+    margin-left: 10%;
+    align-items: center;
+    font-size: .7em;
+  }
+
+  .projectThree {
+    grid-column: 1/1;
+    grid-row: 3/3;
+    align-items: center;
+    font-size: .7em;
+  }
+
+  .projectFour {
+    grid-column: 1/1;
+    grid-row: 3/3;
+    align-items: center;
+    font-size: .7em;
+
+  }
+
+  p {
+    margin-left: 27px;
+    font-size:.7rem;
+    text-align: center;
+    word-wrap: break-word;
+    width: 300px;
+    margin-bottom: 0;
+  }
+
+
+  h3 {
+    font-family: "Brandon";
+    font-size: 1em;
+    padding-left: 37px;
+  }
+  h2{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;;
+
+  }
+
+  h1{
+    margin-top: 0;
+    font-size: 1em;
+  }
+
+  img{
+    max-width: 50%;
+    height: auto;
+  }
+
+}
 }

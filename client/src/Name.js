@@ -1,6 +1,8 @@
 import React from "react";
 import ReactTypingEffect from "react-typing-effect";
 import small from "./media/small.png";
+import { Link } from "react-router-dom";
+
 
 export default function Name() {
   return (
@@ -9,6 +11,11 @@ export default function Name() {
         <h5>Diana Ibarra</h5>
 
         <h2>Full Stack JavaScript Developer</h2>
+        <br/>
+          <Link to="/contact" className="btn-primary">
+            <button >Contact Now </button>
+          </Link>
+          <br/>
         <ReactTypingEffect
           text={["Mindful", "Calm", "Diligent"]}
           style={{
@@ -58,10 +65,9 @@ export default function Name() {
         
         </center>
       </div>
-
+<center><h2>About</h2></center>
       <p>
-        {" "}
-        I create aesthetically pleasing applications that empower people to
+        I create applications that empower people to
         learn something new. When I am not coding, I am teaching meditation
         classes.
       </p>

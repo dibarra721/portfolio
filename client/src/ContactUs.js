@@ -16,7 +16,7 @@ export const ContactUs = () => {
       )
       .then(
         (result) => {
-          alert("thank you for reaching out");
+          alert("Thank you for reaching out, I will get in touch shortly");
           e.target.reset();
         },
         (error) => {
@@ -35,10 +35,10 @@ export const ContactUs = () => {
   <h2> I look forward to hearing from you.</h2>
   <form id="form" ref={form} onSubmit={sendEmail}>
       <label>Name :</label>
-      <input type="text" name="user_name" placeholder="your name" />
+      <input type="text" name="to_name" placeholder="your name" />
       <br />
       <label>Email: </label>
-      <input type="email" name="user_email" placeholder="your email" />
+      <input type="email" name="from_name" placeholder="your email" />
       <br />
       <label>Message:</label>
       <textarea name="message" />
